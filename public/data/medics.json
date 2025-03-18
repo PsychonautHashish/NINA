@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "specialty": "Cardiologist",
+      "photo": "/assets/medics/dr-sarah.jpg",
+      "location": "City Hospital, Downtown",
+      "contact": "sarah.j@hospital.com",
+      "experience": "12 years",
+      "languages": ["English", "Spanish"],
+      "bio": "Board-certified cardiologist with extensive experience in..."
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Chen",
+      "specialty": "Pediatrician",
+      "photo": "/assets/medics/dr-chen.jpg",
+      "location": "Children's Health Center",
+      "contact": "m.chen@childrenshealth.org",
+      "experience": "8 years",
+      "languages": ["English", "Mandarin"],
+      "bio": "Pediatric specialist focused on preventive care and..."
+    }
+  ]

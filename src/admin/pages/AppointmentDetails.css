@@ -1,0 +1,38 @@
+/* AppointmentDetails.css */
+
+/* Basic Styles */
+.appointment-details {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f6f9;
+  }
+  
+  .appointment-details h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #0056b3;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

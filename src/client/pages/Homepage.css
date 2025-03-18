@@ -1,0 +1,486 @@
+/* General layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  display: flex; /* Ensures the body uses flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px; /* For space below the fixed header */
+}
+
+/* Header (Nav buttons and NINA) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2d2d2d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  right: 0;
+}
+
+.left-header {
+  color: white;
+}
+
+.nina {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.right-header {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0078d4;
+}
+
+.cart-btn i {
+  margin-right: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 80px; /* Adjust for fixed header */
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  transform: translateY(-100px); /* Adjust to -20px to -40px */
+}
+
+.text-container-2 {
+  flex: 1;
+  padding: 20px;
+  flex-direction: column;
+  box-shadow: #333;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.text-container-2 p {
+  margin-top: 80px; /* Adjust this value to your preference */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  height: 100;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: translateY(-100px); /* Adjust to -20px to -40px */
+}
+
+/* Image Styling with Animation */
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: opacity(100%);
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+  transition: filter 0.4s ease, transform 0.3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.image-container img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+/* CTA Buttons */
+.cta-buttons .cta-btn {
+  background-color: #0078d4;
+  color: white;
+  padding: 12px 24px;
+  margin: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #005f9e;
+}
+
+/* Appointments Section */
+.appointments-section {
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+  transform: translateY(-80px)
+}
+
+.appointments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2d2d2d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+}
+
+.footer-btn {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.footer-btn:hover {
+  background-color: #005f9e;
+}
+
+/* Button Styling */
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-shadow-drop {
+  position: relative;
+  margin-top: 10%;
+  background: rgb(249, 250, 250);
+  padding: 20px;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  left: -10px;
+  transform: translateY(-40px); /* Adjust to -20px to -40px */
+  top: 0px;
+  width: 200px;
+}
+
+.btn-shadow-drop:hover {
+  left: 4px;
+  top: 4px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+}
+
+.btn-shadow-drop--black {
+  border: 1px solid rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
+  box-shadow: rgb(51, 51, 51) 4px 4px 0px 0px;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.search-btn {
+  background-color: #000000;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.search-btn:focus {
+  outline: none;
+}
+
+.search-bar {
+  padding: 14px 25px;
+  width: 600px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: 1px solid #007bff;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  box-shadow: 0 6px 8px rgba(0, 123, 255, 0.2);
+  border-color: #007bff;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 20px 200px;
+  text-align: center;
+  background-color: #f9f9f9;
+  left:0;
+  right:0;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0078d4;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #f4f7fa;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-btn {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #0078d4;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #005f9e;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  display: inline-block; /* Ensures button behavior */
+  position: relative; /* Needed for pseudo-element positioning */
+  z-index: 1;
+}
+
+.btn-slide-bottom {
+  display: inline-block; /* Ensures it's inline with text */
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgb(51, 51, 51);
+  padding: 17px 45px;
+  transition: 0.5s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  position: relative; /* Needed to contain the pseudo-element */
+}
+
+.btn-slide-bottom span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-slide-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%; /* Adjust to fit the button's height */
+  width: 100%; /* Adjust to fit the button's width */
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%) translateY(-50%) rotate(45deg); /* Adjust to fit inside */
+  background-color: rgb(255, 255, 255); /* Orange background */
+  opacity: 30%;
+}
+
+.btn-slide-bottom:hover::after {
+  transform: translateX(0%) translateY(-50%) rotate(45deg); /* Ensure it animates inside the button */
+}
+
+.btn-slide-bottom--orange::after {
+  background: rgb(255, 255, 255); /* The orange color stays consistent */
+}
+
+/* Homepage.css */
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-section.pharmacy-hero .cta-buttons .btn {
+  transition: background-color 0.3s ease;
+}
+
+.hero-section.pharmacy-hero .cta-buttons .btn:hover {
+  background-color: #333;
+}
+

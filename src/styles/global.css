@@ -1,0 +1,100 @@
+/* global.css */
+
+/* Reset some basic styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Root */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh; /* Ensure body takes full height */
+  display: flex; /* Enable flexbox for centering children */
+  flex-direction: column; /* Stack elements vertically */
+  margin: 0; /* Ensure no margin around body */
+  padding: 0; /* Ensure no padding inside body */
+}
+
+/* html adjustments */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  height: 100%; /* Ensure html element takes full height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  width: 100%;
+  
+}
+
+/* Reset default anchor behavior */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Flexbox utilities */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Fullscreen Flex Centering */
+.fullscreen-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the element takes up full viewport height */
+}
+
+/* Button Base */
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Text Centering */
+.text-center {
+  text-align: center;
+}
+
+/* Padding and Margins */
+.p-20 {
+  padding: 20px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}

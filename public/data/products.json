@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Pain Reliever",
+      "description": "Fast-acting pain relief tablets",
+      "price": 9.99,
+      "imageUrl": "src/client/assets/images.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Vitamin C Supplements",
+      "description": "1000mg chewable vitamin C tablets",
+      "price": 14.99,
+      "imageUrl": "src/client/assets/images.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Antihistamine",
+      "description": "Non-drowsy allergy relief",
+      "price": 12.49,
+      "imageUrl": "src/client/assets/images.jpg"
+    }
+  ]

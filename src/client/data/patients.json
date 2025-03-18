@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "123-456-7890",
+    "appointments": [
+      {
+        "appointmentId": 1,
+        "date": "2025-03-10",
+        "reason": "Routine Checkup",
+        "status": "Scheduled"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "phone": "098-765-4321",
+    "appointments": [
+      {
+        "appointmentId": 2,
+        "date": "2025-03-12",
+        "reason": "Follow-up",
+        "status": "Scheduled"
+      }
+    ]
+  }
+]
